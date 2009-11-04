@@ -1,11 +1,11 @@
 #summary Simple Overview of this Simple Library.
 #labels Featured,Phase-Deploy,Phase-Implementation
 
-= Introduction =
-
-Google Voice Java is meant as an API.  You must first have a Google Voice Account.  
-
 = Getting Started =
+
+Google Voice Java is an API.  You must first have a Google Voice Account and know how to hack some Java for this to be useful.  
+
+So far our tests of this library have worked well, and 
 
 Besides your login details for your Google Account, you must make up a "Source" value which we presume Google just uses as a tag in logging, and any String value appears to be acceptable.  (Any clarification about the purpose of this variable would be appreciated).  More importantly you need to log into your Google Voice Account, and look up the `_`rnr`_`se value in the page Source Code.  This value does not change and is unique to your account.
 
@@ -17,7 +17,7 @@ import com.techventus.server.voice.Voice;
 
 ...
 
-      Voice voice = new Voice(userName, pass, source,rnrSee);
+      Voice voice = new Voice(userName, pass, source, rnrSee);
 
 ...
 
@@ -39,7 +39,9 @@ This function, and the other similar functions return raw HTML or XML code which
 == Placing Calls ==
 
 
-To place a call, you simply pass the number from which you wish to call (originNumber) and the number being called (destinationNumber).  Google Voice only allows you to use an Origin Number which has already been registered with them as associated with that Google Voice Account.
+To place a call, you simply pass the number from which you wish to call (originNumber) and the number being called (destinationNumber).  Google Voice only allows you to use an Origin Number which has already been registered with them as associated with that Google Voice Account.  
+
+We havent tried otherwise, but would recommend against using special characters in the phone numbers.  However, we have tested using '+' with International calling and it works just fine.
 
 {{{
 ...
