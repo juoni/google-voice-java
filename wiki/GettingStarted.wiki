@@ -5,9 +5,19 @@
 
 Google Voice Java is an API.  You must first have a Google Voice Account and know how to hack some Java for this to be useful.  
 
-So far our tests of this library have worked well, and 
+So far our tests of this library have worked well.  To do a simple command line test, enter the following in your commandline:
 
-Besides your login details for your Google Account, you must make up a "Source" value which we presume Google just uses as a tag in logging, and any String value appears to be acceptable.  (Any clarification about the purpose of this variable would be appreciated).  More importantly you need to log into your Google Voice Account, and look up the `_`rnr`_`se value in the page Source Code.  This value does not change and is unique to your account.
+{{{
+
+     java -jar {path}/google-voice-java-1.1.jar
+
+}}} 
+
+This simply logs in, displays your auth key, fetches contents of your inbox and sentbox, and displays the HTML.  It runs the test.jar script.  Add the jar to your classpath and access the Voice.class to do whatever you need.
+
+
+
+
 
 Now you must create a Voice object
 
@@ -17,7 +27,7 @@ import com.techventus.server.voice.Voice;
 
 ...
 
-      Voice voice = new Voice(userName, pass, source, rnrSee);
+      Voice voice = new Voice(userName, pass);
 
 ...
 
@@ -104,6 +114,8 @@ A complete list of available functions to check to pull recent info from the Goo
 
 {{{
 
+        getGeneral()
+
         getInbox()
 
         getStarred()
@@ -124,3 +136,6 @@ A complete list of available functions to check to pull recent info from the Goo
 
 
 }}}
+
+
+Contact the author if you have problems.
