@@ -1,5 +1,5 @@
 #summary Simple Overview of this Simple Library.
-#labels Featured,Phase-Deploy,Phase-Implementation
+#labels Featured,Phase-Deploy,Phase-Implementation,Phase-Support,Phase-Requirements,Phase-Design
 
 = Getting Started =
 
@@ -9,7 +9,7 @@ So far our tests of this library have worked well.  To do a simple command line 
 
 {{{
 
-     java -jar {path}/google-voice-java-1.1.jar
+     java -jar {path}/google-voice-java-1.3.jar
 
 }}} 
 
@@ -104,7 +104,36 @@ and everything _should_ work again.
 
 Indeed, that function is called in the background when you first create the Voice object.
 
-If something is off and you trigger a CAPTCHA from Google Voice, you will probably have to log back into the account manually.  This API is not equipped to handle the CAPTCHA request in any meaningful way.
+If something is off and you trigger a CAPTCHA from Google Voice, you will probably have to log back into the account manually.  This API is not equipped to handle the CAPTCHA request in any meaningful way at this time.
+
+== Enable/Disable Phones to Receive Calls ==
+
+To enable or disable a phone, you must determine the integer identification of that phone.  Upon creating a successful Voice object, a list a Phone objects is created and populated from the information in your Google Voice account, phoneList.  Each Phone object in the phoneList has the following protected variables
+
+{{{
+
+      	protected String id;
+	protected String number;
+	protected String formattedNumber;
+	protected String type;
+	protected String name;
+	protected String carrier;
+	protected Boolean verified;
+
+}}}
+
+perhaps the easist way to determine the id of the phone you wish to enable or disable is to search the name variable of Phones in the list and then call the id variable.
+
+Once the id is determined, enable or disable with:
+
+{{{
+      voice. phoneEnable(int ID);
+
+      voice. phoneDisable(int ID);
+
+}}}
+
+A String is returned with Google's result output of this action.
 
 
 == Other Callable Functions ==
