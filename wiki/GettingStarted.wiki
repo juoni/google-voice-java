@@ -1,6 +1,12 @@
 #summary Simple Overview of this Simple Library.
 #labels Featured,Phase-Deploy,Phase-Implementation,Phase-Support,Phase-Requirements,Phase-Design
 
+
+(This rough guide was written for version 1.3.  Much new functionality has been added to future versions.  We could definitely use some updated documentation for the new functionality if anyone wishes to volunteer.)
+
+
+
+
 = Getting Started =
 
 Google Voice Java is an API.  You must first have a Google Voice Account and know how to hack some Java for this to be useful.  
@@ -108,7 +114,7 @@ If something is off and you trigger a CAPTCHA from Google Voice, you will probab
 
 == Enable/Disable Phones to Receive Calls ==
 
-To enable or disable a phone, you must determine the integer identification of that phone.  Upon creating a successful Voice object, a list a Phone objects is created and populated from the information in your Google Voice account, phoneList.  Each Phone object in the phoneList has the following protected variables
+To enable or disable a phone, you must determine the integer identification of that phone.  Upon creating a successful Voice object, a list of Phone objects is created and populated from the information in your Google Voice account, phoneList.  Each Phone object in the phoneList has the following protected variables
 
 {{{
 
