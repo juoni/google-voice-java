@@ -1,9 +1,13 @@
 #summary The class Structure of the Project.
+#labels Phase-Design
 
 = Introduction =
 
 The class Structure of the Project
 
 
-= Details =
-[http://code.google.com/ http://code.google.com/images/code_sm.png]
+= Class Diagram only class names and relations =
+[http://google-voice-java.googlecode.com/files/class_diagram_classnames.gif http://google-voice-java.googlecode.com/files/class_diagram_classnames.gif]
+
+= Class Diagram detailed =
+[http://google-voice-java.googlecode.com/files/class_diagram_detailed.jpeg http://google-voice-java.googlecode.com/files/class_diagram_detailed.jpeg]
