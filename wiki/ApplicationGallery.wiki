@@ -4,14 +4,13 @@
 
 Please let us know about your application which uses Google Voice Java
 
+Google Voice Locations
 
-
-The Android Application built by the author of Google-Voice-Java, [http://code.google.com/p/android-google-voice-locations/ Google Voice Locations], is now Open Source under the GPL.
+The Android Application built by the founder of Google-Voice-Java, [http://code.google.com/p/android-google-voice-locations/ Google Voice Locations], is now Open Source under the GPL.
 
 
 We are happy to announce the Open Source [http://code.google.com/p/android-google-voice-locations/ Google Voice Locations Android App] from Techventus, LLC.  It was built on this Google Voice Java Library and the Source Code will be forthcoming. It uses the Enable/Disable functionality of Google Voice Java to allow location aware phone activation preferences to be set on Android. 
 
-
-http://www.androidcentral.com/sites/androidcentral.com/files/articleimage/Phil%20Nickinson/2010/02/GV%20Location/GV%20Location%20QR%20code.png
+Locale Google Voice Plugin
 
 [http://sites.google.com/site/steelgirderdevelopmentsite/home/ Steelgirder Development] has a wonderful plugin for Locale which incorporates the latest Google Voice Java API updates such as custom greeting, enable/disable, do not disturb, group settings, etc.
