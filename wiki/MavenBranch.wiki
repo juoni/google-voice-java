@@ -15,6 +15,8 @@ The current branch represents the fewest changes to the codebase with more exten
 
 The Maven pom contains project metadata, including the version. For the branch, the working version is assumed to be 2.0 and since it is under development (non-release) the -SNAPSHOT qualifier is included (2.0-SNAPSHOT).
 
+The end of the pom includes a profile for possibly deploying the released project artifacts to the Sonatype Maven repository and Maven central repository.
+
 = Command Line Goals =
 
 These goals require [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java JDK6] and [http://maven.apache.org/download.html Maven] (2.2.1 used here) to be installed.<br>
