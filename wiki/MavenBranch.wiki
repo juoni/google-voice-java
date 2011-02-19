@@ -15,6 +15,8 @@ The current branch represents the fewest changes to the codebase with more exten
 
 The Maven pom contains project metadata, including the version. For the branch, the working version is assumed to be 2.0 and since it is under development (non-release) the -SNAPSHOT qualifier is included (2.0-SNAPSHOT).
 
+The scm urls in the pom point to the trunk location in Subversion, instead of the Maven branch location.
+
 The end of the pom includes a profile for possibly deploying the released project artifacts to the Sonatype Maven repository and Maven central repository.
 
 = Command Line Goals =
