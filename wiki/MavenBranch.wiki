@@ -25,6 +25,8 @@ These goals require [http://www.oracle.com/technetwork/java/javase/downloads/ind
 As specified by the Maven README, the JAVA_HOME environment variable is expected to be set to the JDK location, <br>
 and the PATH environment variable is expected to include the Maven bin directory.
 
+Run the following commands from the project base directory, containing the pom.xml
+
 Build the project:
   * Run: mvn clean install
   * The built jar is located at target/google-voice-java-2.0-SNAPSHOT.jar
