@@ -33,6 +33,7 @@ Generate Eclipse project:
   * Run: mvn eclipse:configure-workspace -Declipse.workspace=/path/to/workspace
   * Run: mvn eclipse:eclipse
   * The .project and .classpath files are generated
+  * Each time the pom dependencies are changed, these can be updated running eclipse:eclipse
 
 = Future Steps =
   * Remove lib and doc directories
