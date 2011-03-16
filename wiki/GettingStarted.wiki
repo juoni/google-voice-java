@@ -172,5 +172,6 @@ A complete list of available functions to check to pull recent info from the Goo
 
 }}}
 
+== Where to get help ==
 
-Contact the author if you have problems.
+You can subscribe to our mailing list at http://groups.google.com/group/google-voice-java and post your questions there.
