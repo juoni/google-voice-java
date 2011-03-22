@@ -38,8 +38,10 @@ Click the round green run button.  This will build the source and execute it.  Y
 
 If everything has gone according to plan, you will see:
 
-{{{Could not read the testProps, falling back to input. (null)
-Enter Your Google Voice Username, eg user@gmail.com:}}}
+{{{
+Could not read the testProps, falling back to input. (null)
+Enter Your Google Voice Username, eg user@gmail.com:
+}}}
 
 You have built from source!
 
