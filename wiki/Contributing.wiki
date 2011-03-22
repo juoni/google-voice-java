@@ -3,7 +3,7 @@
 Are you looking to start contributing to the google-voice-java project?  Or perhaps just hack some custom changes in on your own?  Here are a couple tips to help you get set up.
 
 == Mailing List ==
-The easiest way to get in contact with the suer contributers is throug the mailing list located here: http://groups.google.com/group/google-voice-java
+The easiest way to get in contact with the contributers is through the mailing list located here: http://groups.google.com/group/google-voice-java
 
 == Setting Up a Development Environment==
 
