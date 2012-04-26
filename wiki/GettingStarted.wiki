@@ -15,7 +15,7 @@ So far our tests of this library have worked well.  To do a simple command line 
 
 {{{
 
-     java -jar {path}/google-voice-java-1.3.jar
+     java -jar {path}/google-voice-java-{version}.jar
 
 }}} 
 
